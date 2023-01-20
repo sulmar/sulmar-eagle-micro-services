@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.UI" Version="6.0.5" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="6.0.5" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="6.0.5" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.SQLite.Storage" Version="6.0.5" />
     <PackageReference Include="Bogus" Version="34.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

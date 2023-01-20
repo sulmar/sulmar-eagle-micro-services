@@ -1,0 +1,16 @@
+﻿@baseUrl = http://localhost:5270
+
+###
+
+POST {{baseUrl}}/api/token/create
+
+Accept: application/json
+
+{
+    "Login":"marcin",
+    "Password":"123"
+}
+
+###
+
+

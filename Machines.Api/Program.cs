@@ -1,6 +1,7 @@
 global using FastEndpoints;
 global using Machines.Domain;
 using Bogus;
+using Machines.Api;
 using Machines.Infrastucture;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,6 +23,8 @@ var app = builder.Build();
 // dotnet add package Ardalis.ApiEndpoints
 
 app.MapGet("/", () => "Hello World!");
+
+app.MapGet("machines/coffee", () => Results.Extensions.ImaTeapot());
 
 using var scope = app.Services.CreateScope();
 var context = scope.ServiceProvider.GetRequiredService<MachineContext>();

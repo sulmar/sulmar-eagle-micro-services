@@ -3,16 +3,16 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:53593",
+      "applicationUrl": "http://localhost:2625",
       "sslPort": 0
     }
   },
   "profiles": {
-    "Eagle.Micro.Customers.Api": {
+    "AuthApi": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": false,
-      "applicationUrl": "http://localhost:5263",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5270",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

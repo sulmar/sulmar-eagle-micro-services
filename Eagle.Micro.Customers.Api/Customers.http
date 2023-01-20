@@ -1,0 +1,13 @@
+﻿@baseUrl = http://localhost:5263
+
+GET {{baseUrl}}/api/customers/ping
+
+###
+
+GET {{baseUrl}}/api/customers
+x-secret-key: abc
+Accept: application/json
+
+###
+
+

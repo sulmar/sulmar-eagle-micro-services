@@ -19,8 +19,8 @@ public class CustomersContext : DbContext
             .ApplyConfiguration(new CustomerConfiguration())
             .ApplyConfiguration(new AddressConfiguration());
 
-        modelBuilder
-            .Entity<ApplicationUser>().ToTable("ApplicationUsers", t => t.ExcludeFromMigrations());
+        //modelBuilder
+        //    .Entity<ApplicationUser>().ToTable("ApplicationUsers", t => t.ExcludeFromMigrations());
 
         base.OnModelCreating(modelBuilder);
     }
