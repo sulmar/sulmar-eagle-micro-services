@@ -4,7 +4,7 @@ namespace Auth.Api.Extensions;
 
 public static class RuleBuilderExtensions
 {
-    public static void Password<T>(this IRuleBuilder<T, string> ruleBuilder, int minimumLength = 10)
+    public static void StrongPassword<T>(this IRuleBuilder<T, string> ruleBuilder, int minimumLength = 10)
     {
         ruleBuilder
             .MinimumLength(minimumLength)
