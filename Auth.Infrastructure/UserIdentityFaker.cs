@@ -11,7 +11,7 @@ public sealed class UserIdentityFaker : Faker<UserIdentity>
         UseSeed(1);
         RuleFor(p => p.Id, f => f.IndexFaker);
         RuleFor(p => p.Username, f => f.Person.UserName);
-        RuleFor(p => p.HashedPassword, (f, user) => passwordHasher.HashPassword(user, "123"));
+        RuleFor(p => p.HashedPassword, (f, user) => passwordHasher.HashPassword(user, "OHE2l1ud8k*T"));
         RuleFor(p => p.Email, f => f.Person.Email);
         RuleFor(p => p.Phone, f => f.Person.Phone);
 
